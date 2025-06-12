@@ -1,5 +1,7 @@
 //Sri Rama Jayam
-
+//Step 1: Create a new node with a value
+//Step 2: Link the head of the current linked list to the newly created node
+//Step 3: Set the head of the linked list as the new node
 #include<iostream>
 
 using namespace std;
@@ -14,10 +16,6 @@ class Node{
 	}
 };
 
-//To insert an element at the front:
-//Step 1 : Create a new node with the given value
-//Step 2 : Link this node with the current head of the linked list
-//Step 3 : Set this new node as the head of the linked list
 
 class LinkedList{
 	public:
@@ -39,8 +37,8 @@ class LinkedList{
 int main(){
 	int value;
 	cin>>value;
-	LinkedList List;
-	List.insertAtFront(value);
-	cout<<"The value inserted is "<<List.getValue()<<endl;
+	LinkedList* List = new LinkedList();
+	List->insertAtFront(value);
+	cout<<"The value inserted is "<<List->getValue()<<endl;
 	return 0;
 }
